@@ -183,7 +183,7 @@ static NSUInteger _prefetchedNum = 10;
     for (NSUInteger i = 0; i < numberOfFrames; ++i) {
         [self.images addObject:aNull];
         NSTimeInterval frameDuration = CGImageSourceGetGifFrameDelay(imageSource, i);
-        self.frameDurations[i] = frameDuration;
+        self.frameDurations[i] = frameDuration * 0.3;
         self.totalDuration += frameDuration;
     }
     //CFTimeInterval start = CFAbsoluteTimeGetCurrent();
