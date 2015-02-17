@@ -290,5 +290,8 @@ static NSUInteger _prefetchedNum = 10;
         CFRelease(_incrementalSource);
     }
 }
-
+- (void)setLoopCountForAnimation:(NSUInteger)loopCount
+{
+    _loopCount = loopCount;
+}
 @end
