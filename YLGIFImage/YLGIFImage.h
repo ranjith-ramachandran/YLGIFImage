@@ -32,5 +32,6 @@
 @property (nonatomic, readonly) NSUInteger loopCount;
 
 - (UIImage*)getFrameWithIndex:(NSUInteger)idx;
+- (void)setLoopCountForAnimation:(NSUInteger)loopCount;
 
 @end
